@@ -1,6 +1,51 @@
 // Cat Adoption Center
+const cat = {
+    longHair: [
+        {
+            name: 'Onion',
+            color: 'yellow',
+            url: 'assets/yellowCat.jpg'
+        },
+        {
+            name: 'Poutine',
+            color: 'mix',
+            url: 'assets/mixCat.jpg'
 
-// Landing page with the app heading "Cat Adoption Center" and welcome message "Every cat deserves to have a family!"
+        },
+        {
+            name: 'Sushi',
+            color: 'white',
+            url: 'assets/whiteCat.jpg'
+
+        }
+        
+    ],
+    shortHair: [
+        {
+            name: 'Apple',
+            color: 'white'
+        },
+        {
+            name: 'Peanut',
+            color: 'yellow'
+        },
+        {
+            name: 'Cookie',
+            color: 'mix'
+        }
+    ]
+};
+
+// Document ready
+$(function() {
+    console.log("hiiiiii");
+
+
+
+
+
+
+});
 
 // A button that allow user to start the process, which will navigate them to a form.
 

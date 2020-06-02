@@ -5,38 +5,75 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- link to CSS -->
     <link rel="stylesheet" href="styles/style.css">
-    <!-- link to JS -->
-    <script src="app.js"></script>
     <title>Cat Adoption Center</title>
 </head>
 <body>
     <!-- header starts -->
     <header>
-        <h1>Cat Adoption Center</h1>
-        <button>Start Adopting</button>
+        <div class="wrapper">
+            <h1>Cat Adoption Center</h1>
+            <p>Every cat deserves to have a family!</p>
+            <button class="headerButton">Start Adopting</button>
+        </div>
     </header>
     <!-- main starts -->
     <main>
-        <section>
-            <form action="GET">
-                <div>
-                    <label for="breed">Breed</label>
-                    <input type="radio" for="breed" name="breed" id="breed">
+        <section class="formSection">
+            <div class="wrapper">
+                <h2>What are your preferences?</h2>
+                <form action="GET">
+                    <fieldset>
+                        <p>Breed</p>
+                        <label for="longHair">Domestic Longhair</label>
+                        <input type="radio" for="longHair" name="hair" id="longHair">
+        
+                        <label for="shortHair">Domestic Shorthair</label>
+                        <input type="radio" for="shortHair" name="hair" id="shortHair">
+                    </fieldset>
     
-                    <label for="color">Color</label>
-                    <input type="radio" for="color" name="color" id="color">
+                    <fieldset>
+                        <p>Color</p>
+                        <label for="mix">Mix</label>
+                        <input type="radio" name="color" for="mix">
     
-                </div>
-            </form>
+                        <label for="white">White</label>
+                        <input type="radio" name="color" for="white">
+    
+                        <label for="black">Black</label>
+                        <input type="radio" name="color" for="black">
+                    </fieldset>
+    
+                    <button class="submitButton">Find my cat</button>
+                </form>
+            </div>
         </section>
 
-        <section class="results">
+        <section>
+            <div class="wrapper results">
 
+            </div>
         </section>
     </main>
     <footer>
-        <div class="contact"></div>
-        <div class="subscription"></div>
+        <div class="wrapper">
+            <div class="contact">
+                <h3>Contact</h3>
+                <p>adoption@cat.com</p>
+                <p>123 Queen St, Toronto, ON M1M5A5</p>
+                <p>123-456-7890</p>
+            </div>
+            <div class="subscription">
+                <h3>Subscribe here</h3>
+                <form action="#">
+                    <label for="email">Email</label>
+                    <input type="email" for="email" placeholder="Enter your email">
+                </form>
+            </div>
+        </div>
     </footer>
+    <!-- link jQuery -->
+    <script src='https://code.jquery.com/jquery-3.4.0.min.js' integrity='sha256-BJeo0qm959uMBGb65z40ejJYGSgR7REI4+CW1fNKwOg=' crossorigin='anonymous'></script>
+    <script src="app.js"></script>
+
 </body>
 </html>
