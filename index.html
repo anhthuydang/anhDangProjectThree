@@ -25,30 +25,31 @@
                     <fieldset>
                         <p>Breed</p>
                         <label for="longHair">Domestic Longhair</label>
-                        <input type="radio" for="longHair" name="hair" id="longHair">
+                        <input type="radio" name="breed" id="longHair" value="longHair">
         
                         <label for="shortHair">Domestic Shorthair</label>
-                        <input type="radio" for="shortHair" name="hair" id="shortHair">
+                        <input type="radio" name="breed" id="shortHair" value="shortHair">
                     </fieldset>
     
                     <fieldset>
                         <p>Color</p>
                         <label for="mix">Mix</label>
-                        <input type="radio" name="color" for="mix">
+                        <input type="radio" name="color" id="mix" value="mix">
     
                         <label for="white">White</label>
-                        <input type="radio" name="color" for="white">
+                        <input type="radio" name="color" id="white" value="white">
     
-                        <label for="black">Black</label>
-                        <input type="radio" name="color" for="black">
+                        <label for="yellow">Yellow</label>
+                        <input type="radio" name="color" id="yellow" value="yellow">
                     </fieldset>
-    
-                    <button class="submitButton">Find my cat</button>
+                    <div>
+                        <button class="findCatButton" type="submit">Find my cat!</button>
+                    </div>
                 </form>
             </div>
         </section>
 
-        <section>
+        <section class="resultSection">
             <div class="wrapper results">
 
             </div>

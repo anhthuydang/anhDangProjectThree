@@ -15,9 +15,9 @@ header {
 }
 header .wrapper {
     width: 40%;
-    height: 80vh;
+    height: 90vh;
     margin-left: 5%;
-    padding:40px;
+    padding:30px;
     background: rgba(0,0,0,0.3);
     border-radius: 50px;
     box-shadow: 3px 3px 10px white;
@@ -30,12 +30,13 @@ header p {
 }
 
 h1 {
-    font-size: 7rem;
+    font-size: 9rem;
 }
 header p {
-    font-size: 2.5rem;
+    font-size: 3rem;
     font-style: italic;
-    margin: 25px 0 40px 0;
+    font-weight: 600;
+    margin: 20px 0 30px 0;
     line-height: 35px;
 }
 .headerButton {
@@ -81,22 +82,63 @@ fieldset {
     margin-bottom: 20px;
     padding:30px;
 }
-.submitButton {
+fieldset p {
+    margin-bottom:15px;
+    font-size:2.7rem;
+}
+main button {
     margin-top:50px;
-    background: #447140;
-    color: #f5f5dc;
     padding: 10px 20px;
     font-size: 2.5rem;
     border-radius: 10px;
     border:none;
     box-shadow: 3px 3px 10px black;
 }
-.submitButton:hover,
-.submitButton:focus {
+.findCatButton {
+    background: #447140;
+    color: #f5f5dc;
+}
+.findCatButton:hover,
+.findCatButton:focus {
     background:white;
     color:#447140;
 }
 
+// Results section
+.resultSection {
+    background-color:#447140;
+    color: beige;
+}
+.results {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.results img {
+    width: 40%;
+    margin: 50px;
+    border: 3px solid beige;
+    border-radius:5px;
+    box-shadow: 3px 3px 10px black;
+}
+h3 {
+    font-size: 3rem;
+}
+.results p {
+    font-size: 2rem;
+    margin:5px;
+}
+.adoptCatButton {
+    background:beige;
+    color:#447140;
+    margin-bottom:30px;
+}
+.adoptCatButton:hover,
+.adoptCatButton:focus {
+    background: #447140;
+    color: #f5f5dc;
+}
 
 // Footer
 footer {
