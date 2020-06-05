@@ -3,6 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- link to Fontawesome -->
+    <script src="https://kit.fontawesome.com/035c9ff2be.js" crossorigin="anonymous"></script>
     <!-- link to CSS -->
     <link rel="stylesheet" href="styles/style.css">
     <title>Cat Adoption Center</title>
@@ -24,23 +26,23 @@
                 <form action="GET">
                     <fieldset>
                         <p>Breed</p>
-                        <label for="longHair">Domestic Longhair</label>
                         <input type="radio" name="breed" id="longHair" value="Domestic longhair">
+                        <label for="longHair">Domestic Longhair</label>
         
-                        <label for="shortHair">Domestic Shorthair</label>
                         <input type="radio" name="breed" id="shortHair" value="Domestic shorthair">
+                        <label for="shortHair">Domestic Shorthair</label>
                     </fieldset>
     
                     <fieldset>
                         <p>Color</p>
+                        <input type="radio" name="color" id="mix" value="Mix">
                         <label for="mix">Mix</label>
-                        <input type="radio" name="color" id="mix" value="mix">
     
+                        <input type="radio" name="color" id="white" value="White">
                         <label for="white">White</label>
-                        <input type="radio" name="color" id="white" value="white">
     
+                        <input type="radio" name="color" id="Yellow" value="yellow">
                         <label for="yellow">Yellow</label>
-                        <input type="radio" name="color" id="yellow" value="yellow">
                     </fieldset>
                     <div>
                         <button class="findCatButton" type="submit">Find my cat!</button>
@@ -54,23 +56,32 @@
 
             </div>
         </section>
+
+        <section class="gallery">
+        </section>
+
+        <section class="contact">
+            <div class="wrapper">
+                <div class="contactInfo">
+                    <h3>Contact</h3>
+                    <p>123-456-7890</p>
+                    <p>123 Queen Street West, Unit 10, Toronto, Ontario</p>
+                    <p>M5V2D5</p>
+                </div>
+                <div class="subscription">
+                    <h3>Subscribe</h3>
+                    <form action="#">
+                        <label class="sr-only" for="email">Email</label>
+                        <input type="email" for="email" placeholder="Enter your email">
+                        <button  type="submit">Submit</button>
+
+                    </form>
+                </div>
+            </div>
+        </section>
     </main>
     <footer>
-        <div class="wrapper">
-            <div class="contact">
-                <h3>Contact</h3>
-                <p>adoption@cat.com</p>
-                <p>123 Queen St, Toronto, ON M1M5A5</p>
-                <p>123-456-7890</p>
-            </div>
-            <div class="subscription">
-                <h3>Subscribe here</h3>
-                <form action="#">
-                    <label for="email">Email</label>
-                    <input type="email" for="email" placeholder="Enter your email">
-                </form>
-            </div>
-        </div>
+        <p>Copyright <i class="far fa-copyright"></i> 2020 anhthuydang</p>
     </footer>
     <!-- link jQuery -->
     <script src='https://code.jquery.com/jquery-3.4.0.min.js' integrity='sha256-BJeo0qm959uMBGb65z40ejJYGSgR7REI4+CW1fNKwOg=' crossorigin='anonymous'></script>

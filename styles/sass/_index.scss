@@ -6,7 +6,7 @@
 
 // ----Header-----
 header {
-    background-image: url(../assets/header.jpg);
+    background-image: url(../assets/header4.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     height: 100vh;
@@ -14,18 +14,19 @@ header {
     align-items: center;
 }
 header .wrapper {
-    width: 40%;
+    // width: 40%;
+    text-align: right;
     height: 90vh;
     margin-left: 5%;
     padding:30px;
-    background: rgba(0,0,0,0.3);
+    // background: rgba(0,0,0,0.3);
     border-radius: 50px;
     box-shadow: 3px 3px 10px white;
 }
 
 h1,
 header p {
-    color: #f5f5dc;
+    color: #000;
 
 }
 
@@ -33,7 +34,7 @@ h1 {
     font-size: 9rem;
 }
 header p {
-    font-size: 3rem;
+    font-size: 4rem;
     font-style: italic;
     font-weight: 600;
     margin: 20px 0 30px 0;
@@ -43,6 +44,7 @@ header p {
     background: #393535;
     color: #f5f5dc;
     padding: 10px 20px;
+    margin-top: 160px;
     font-size: 2.5rem;
     border-radius: 10px;
     box-shadow: 3px 3px 10px white;
@@ -57,16 +59,17 @@ header p {
 
 // Selection form
 .formSection {
-    height: 100vh;
     padding: 70px 0;
-    background-color: #f5f5dc;
+    background-color: #F0DFBB;
     text-align: center;
 }
 h2 {
     font-size: 4rem;
+    text-transform: capitalize;
+    margin:40px 0;
 
 }
-main form {
+.formSection form {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -75,8 +78,8 @@ main form {
 }
 fieldset {
     width: 70%;
-    background-color: #447140;
-    color: beige;
+    background-color: #DBB36C;
+    color: #000;
     font-size: 2rem;
     border-radius: 15px;
     margin-bottom: 20px;
@@ -90,24 +93,21 @@ main button {
     margin-top:50px;
     padding: 10px 20px;
     font-size: 2.5rem;
-    border-radius: 10px;
+    border-radius: 5px;
     border:none;
-    box-shadow: 3px 3px 10px black;
+    box-shadow: 3px 3px 5px black;
 }
 .findCatButton {
-    background: #447140;
-    color: #f5f5dc;
+    background: #CC874F;
 }
 .findCatButton:hover,
 .findCatButton:focus {
-    background:white;
-    color:#447140;
-}
+    background: #60383B;
+    color: #f5f5dc;}
 
 // Results section
 .resultSection {
-    background-color:#447140;
-    color: beige;
+    background-color:#EDD4B6;
 }
 .results {
     display: flex;
@@ -115,40 +115,96 @@ main button {
     justify-content: center;
     align-items: center;
 }
-.results img {
+.chosenCatImg {
     width: 40%;
     margin: 50px;
     border: 3px solid beige;
     border-radius:5px;
     box-shadow: 3px 3px 10px black;
+    }
+
+// .results img {
+.chosenCatInfo {
+    width: 50%;
+    margin-left:30px;
 }
 h3 {
     font-size: 3rem;
+    margin-bottom:20px;
 }
 .results p {
-    font-size: 2rem;
+    font-size: 3rem;
+    // font-weight: 600;
+    line-height: 40px;
     margin:5px;
 }
+.results span {
+    font-weight: 600;
+}
 .adoptCatButton {
-    background:beige;
-    color:#447140;
+    background:#CC874F;
     margin-bottom:30px;
 }
 .adoptCatButton:hover,
 .adoptCatButton:focus {
-    background: #447140;
+    background: #60383B;
     color: #f5f5dc;
 }
 
 // Footer
-footer {
-    background-color:#f5f5dc;
-    padding:30px 0;
+.contact {
+    background-color: #F0DFBB;
+    padding:50px 0;
     font-size: 2rem;
 }
-footer .wrapper {
+.contact .wrapper {
     display: flex;
 }
-footer .wrapper div {
+.contactInfo {
     width: 50%;
+    padding-right: 50px;
 }
+.subscription {
+    width: 40%;
+    font-size: 0;
+}
+.contact ul {
+    display: flex;
+    
+}
+.contact a {
+    padding:0 10px;
+    color:#000;
+}
+.contact button {
+    font-size: 18px;
+    background-color: #CC874F;
+    padding:5px 15px;
+    border-radius: 2px;
+    border:none;
+}
+.contact button:hover,
+.contact button:focus {
+    background-color: #60383B;
+    color: #f5f5dc;
+}
+.contact p {
+    font-weight: 600;
+    line-height: 30px;
+}
+
+input[type="email"] {
+    font-size:18px;
+    padding: 3px 10px;
+    
+}
+
+// Footer
+footer {
+    background-color: #000;
+    color:#fff;
+    text-align: center;
+    font-size: 20px;
+    padding: 2px;
+}
+

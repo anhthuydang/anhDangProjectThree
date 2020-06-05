@@ -3,39 +3,39 @@ const adoptionApp = {};
     adoptionApp.cats = [
         {
             name: 'Onion',
-            color: 'yellow',
+            color: 'Yellow',
             breed: 'Domestic longhair',
             url: 'assets/yellowCat.jpg',
 
         },
         {
             name: 'Poutine',
-            color: 'mix',
+            color: 'Mix',
             breed: 'Domestic longhair',
             url: 'assets/mixCat.jpg'
 
         },
         {
             name: 'Sushi',
-            color: 'white',
+            color: 'White',
             breed: 'Domestic longhair',
             url: 'assets/whiteCat.jpg'
         },
         {
             name: 'Apple',
-            color: 'white',
+            color: 'White',
             breed: 'Domestic shorthair',
             url: 'assets/whiteCat2.jpg'
         },
         {
             name: 'Peanut',
-            color: 'yellow',
+            color: 'Yellow',
             breed: 'Domestic shorthair',
             url: 'assets/yellow2.jpg'
         },
         {
             name: 'Cookie',
-            color: 'mix',
+            color: 'Mix',
             breed: 'Domestic shorthair',
             url: 'assets/mix2.jpg'
         }
@@ -59,11 +59,16 @@ const adoptionApp = {};
             const finalCat = getRandomCat(chosenCats);
             //  Display image and information of the chosen cat 
             $('.results').append(`
-            <img src="${finalCat.url}" alt="This is picture of a ${finalCat.color} cat">
-            <h3>Name: ${finalCat.name}</h3>
-            <p>Breed: ${finalCat.breed}</p>
-            <p>Color: ${finalCat.color}</p>
-            <button class="adoptCatButton">Adopt this cat!</button>`);
+            <div class="chosenCatImg">
+                <img src="${finalCat.url}" alt="This is picture of a ${finalCat.color} cat">
+            </div>
+            <div class="chosenCatInfo">
+                <p><span>Name: ${finalCat.name}</span></p>
+                <p>Breed: ${finalCat.breed}</p>
+                <p>Color: ${finalCat.color}</p>
+                <button class="adoptCatButton">Adopt this cat!</button>
+            </div>
+            `);
         })
         //getRandomCat function (in case have more cats available for adoption in future)
         const getRandomCat = (chosenCatsArray) => {
