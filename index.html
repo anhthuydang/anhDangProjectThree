@@ -3,6 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- link favicon -->
+    <link type="image/png" href="assets/favicon-32x32.png" rel="icon">
+    <!-- link Google fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=ABeeZee&display=swap" rel="stylesheet">
     <!-- link to Fontawesome -->
     <script src="https://kit.fontawesome.com/035c9ff2be.js" crossorigin="anonymous"></script>
     <!-- link to CSS -->
@@ -20,29 +24,41 @@
     </header>
     <!-- main starts -->
     <main>
-        <section class="formSection">
+        <section class="formSection" id="formSection">
             <div class="wrapper">
                 <h2>What are your preferences?</h2>
                 <form action="GET">
                     <fieldset>
-                        <p>Breed</p>
-                        <input type="radio" name="breed" id="longHair" value="Domestic longhair">
-                        <label for="longHair">Domestic Longhair</label>
-        
-                        <input type="radio" name="breed" id="shortHair" value="Domestic shorthair">
-                        <label for="shortHair">Domestic Shorthair</label>
-                    </fieldset>
-    
-                    <fieldset>
-                        <p>Color</p>
-                        <input type="radio" name="color" id="mix" value="Mix">
-                        <label for="mix">Mix</label>
-    
-                        <input type="radio" name="color" id="white" value="White">
-                        <label for="white">White</label>
-    
-                        <input type="radio" name="color" id="Yellow" value="yellow">
-                        <label for="yellow">Yellow</label>
+                        <div>
+                            <h3>Breed</h3>
+                            <ul>
+                                <li>
+                                    <input type="radio" name="breed" id="longHair" value="Domestic longhair">
+                                    <label for="longHair">Domestic Longhair</label>
+                                </li>
+                                <li>
+                                    <input type="radio" name="breed" id="shortHair" value="Domestic shorthair">
+                                    <label for="shortHair">Domestic Shorthair</label>
+                                </li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h3>Color</h3>
+                            <ul>
+                                <li>
+                                    <input type="radio" name="color" id="mix" value="Mix">
+                                    <label for="mix">Mix</label>
+                                </li>
+                                <li>
+                                    <input type="radio" name="color" id="white" value="White">
+                                    <label for="white">White</label>
+                                </li>
+                                <li>
+                                    <input type="radio" name="color" id="Yellow" value="Yellow">
+                                    <label for="yellow">Yellow</label>
+                                </li>
+                            </ul>
+                        </div>
                     </fieldset>
                     <div>
                         <button class="findCatButton" type="submit">Find my cat!</button>
@@ -51,13 +67,27 @@
             </div>
         </section>
 
-        <section class="resultSection">
+        <section class="resultSection" id="results">
             <div class="wrapper results">
 
             </div>
         </section>
 
         <section class="gallery">
+            <div class="wrapper">
+                <ul>
+                    <li>
+                        <img src="assets/gallery1.jpg" alt="">
+                    </li>
+                    <li>
+                        <img src="assets/gallery2.jpg" alt="">
+                    </li>
+                    <li>
+                        <img src="assets/gallery3.jpg" alt="">
+                    </li>
+                </ul>
+
+            </div>
         </section>
 
         <section class="contact">
@@ -70,6 +100,7 @@
                 </div>
                 <div class="subscription">
                     <h3>Subscribe</h3>
+                    <p>Subscribe here to stay updated.</p>
                     <form action="#">
                         <label class="sr-only" for="email">Email</label>
                         <input type="email" for="email" placeholder="Enter your email">

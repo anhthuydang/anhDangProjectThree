@@ -5,7 +5,7 @@ const adoptionApp = {};
             name: 'Onion',
             color: 'Yellow',
             breed: 'Domestic longhair',
-            url: 'assets/yellowCat.jpg',
+            url: 'assets/yellowCat.jpg'
 
         },
         {
@@ -43,8 +43,16 @@ const adoptionApp = {};
     ];
     // Init function
     adoptionApp.init = () => {
+        // Eventlistener when user clicks "Start Adopting" button
+        $('.headerButton').on('click', function(e) {
+            e.preventDefault();
+            // Smooth scroll to form section
+            $("html, body").animate({
+                scrollTop: $("h2").offset().top}, "slow");
+        })
+
         // Event listener when user clicks "Find my cat" button
-        $('main button').on('click', function(e) {
+        $('.findCatButton').on('click', function(e) {
             e.preventDefault();
             $('.results').empty();
             
@@ -69,6 +77,11 @@ const adoptionApp = {};
                 <button class="adoptCatButton">Adopt this cat!</button>
             </div>
             `);
+
+            // Smooth scroll to result section
+            $("html, body").animate({
+                scrollTop: $(".results").offset().top}, "slow");
+
         })
         //getRandomCat function (in case have more cats available for adoption in future)
         const getRandomCat = (chosenCatsArray) => {
