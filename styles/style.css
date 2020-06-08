@@ -466,6 +466,81 @@ main button {
   color: #f5f5dc;
 }
 
+.adoptFormSection {
+  background-color: #DBB36C;
+  padding: 60px;
+  display: none;
+}
+
+.adoptFormSectionDisplay {
+  display: block;
+}
+
+.adoptFormSection .wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.adoptFormSection form {
+  width: 60%;
+  background-color: #EDD4B6;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 40px;
+  font-size: 20px;
+}
+
+.inputWrapper {
+  width: 100%;
+  text-align: left;
+  margin: 5px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.inputWrapper label {
+  width: 20%;
+}
+
+.inputWrapper input[type="text"],
+.inputWrapper input[type="email"] {
+  width: 70%;
+  height: 30px;
+  border: none;
+}
+
+.adoptFormSection button {
+  width: 35%;
+  background: #CC874F;
+}
+
+.adoptFormSection button:hover,
+.adoptFormSection button:focus {
+  background: #60383B;
+  color: #f5f5dc;
+}
+
 .gallery {
   background: #000;
   height: 50%;
@@ -621,6 +696,10 @@ footer {
   }
   .chosenCatInfo {
     width: 80%;
+    text-align: center;
+  }
+  .results p {
+    text-align: left;
   }
   .gallery li:last-child {
     display: none;

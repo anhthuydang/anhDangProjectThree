@@ -125,7 +125,8 @@ main button {
 .findCatButton:hover,
 .findCatButton:focus {
     background: #60383B;
-    color: #f5f5dc;}
+    color: #f5f5dc;
+}
 
 // Results section
 .resultSection {
@@ -169,6 +170,57 @@ main button {
     background: #60383B;
     color: #f5f5dc;
 }
+
+// Adopt Form Section
+.adoptFormSection {
+    background-color: #DBB36C;
+    padding: 60px;
+    display: none;
+}
+.adoptFormSectionDisplay {
+    display: block;
+}
+.adoptFormSection .wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.adoptFormSection form {
+    width: 60%;
+    background-color: #EDD4B6;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+    font-size: 20px;
+}
+.inputWrapper {
+    width: 100%;
+    text-align: left;
+    margin: 5px 0;
+    display: flex;
+    justify-content: space-around;
+}
+.inputWrapper label {
+    width: 20%;
+}
+.inputWrapper input[type="text"],
+.inputWrapper input[type="email"] {
+    width: 70%;
+    height: 30px;
+    border: none;
+}
+.adoptFormSection button {
+    width: 35%;
+    background: #CC874F;
+}
+.adoptFormSection button:hover,
+.adoptFormSection button:focus {
+    background: #60383B;
+    color: #f5f5dc;
+}
+
 
 // Gallery Section
 .gallery {
@@ -296,13 +348,16 @@ footer {
     }
     .results {
         flex-direction: column;
-
     }
     .chosenCatImg {
         width: 60%;
     }
     .chosenCatInfo {
         width: 80%;
+        text-align: center;
+    }
+    .results p {
+        text-align: left;
     }
     .gallery li:last-child {
         display: none;

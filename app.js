@@ -51,7 +51,7 @@ const adoptionApp = {};
                 scrollTop: $("h2").offset().top}, "slow");
         })
 
-        // Event listener when user clicks "Find my cat" button
+        // Eventlistener when user clicks "Find my cat" button
         $('.findCatButton').on('click', function(e) {
             e.preventDefault();
             $('.results').empty();
@@ -81,8 +81,18 @@ const adoptionApp = {};
             // Smooth scroll to result section
             $("html, body").animate({
                 scrollTop: $(".results").offset().top}, "slow");
-
+            
+            
         })
+        // Eventlistener to make the Adoption Form display and smooth scroll to this section
+        $('.results').on('click', function(e) {
+            e.preventDefault();
+            $('.adoptFormSection').addClass('adoptFormSectionDisplay');
+            // smooth scroll
+            $("html, body").animate({
+                scrollTop: $(".adoptFormSection").offset().top}, "slow");
+        })
+
         //getRandomCat function (in case have more cats available for adoption in future)
         const getRandomCat = (chosenCatsArray) => {
             const randomIndex = Math.floor(Math.random() * chosenCatsArray.length);
