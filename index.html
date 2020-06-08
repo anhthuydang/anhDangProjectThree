@@ -28,21 +28,21 @@
             <div class="wrapper">
                 <h2>What are your preferences?</h2>
                 <form action="GET">
-                    <fieldset>
-                        <div>
+                    <div class="fieldsetWrapper">
+                        <fieldset>
                             <h3>Breed</h3>
-                            <ul>
-                                <li>
-                                    <input type="radio" name="breed" id="longHair" value="Domestic longhair">
-                                    <label for="longHair">Domestic Longhair</label>
-                                </li>
-                                <li>
-                                    <input type="radio" name="breed" id="shortHair" value="Domestic shorthair">
-                                    <label for="shortHair">Domestic Shorthair</label>
-                                </li>
-                            </ul>
-                        </div>
-                        <div>
+                                <ul>
+                                    <li>
+                                        <input type="radio" name="breed" id="longHair" value="Domestic longhair">
+                                        <label for="longHair">Domestic Longhair</label>
+                                    </li>
+                                    <li>
+                                        <input type="radio" name="breed" id="shortHair" value="Domestic shorthair">
+                                        <label for="shortHair">Domestic Shorthair</label>
+                                    </li>
+                                </ul>
+                        </fieldset>
+                        <fieldset>
                             <h3>Color</h3>
                             <ul>
                                 <li>
@@ -58,8 +58,8 @@
                                     <label for="yellow">Yellow</label>
                                 </li>
                             </ul>
-                        </div>
-                    </fieldset>
+                        </fieldset>
+                    </div>
                     <button class="findCatButton" type="submit">Find my cat!</button>
                 </form>
             </div>
@@ -75,6 +75,7 @@
             <div class="wrapper">
                 <form action="#">
                     <h2>Adoption Form</h2>
+                    <p>Please leave us your information so we'd be in touch shortly!</p>
                     <div class="inputWrapper">
                         <label for="name">Name</label>
                         <input type="text" for="name">
@@ -87,7 +88,6 @@
                         <label for="phone">Phone</label>
                         <input type="text" for="phone">
                     </div>
-                    
                     <button type="sutmit">Submit</button>
                 </form>
             </div>
@@ -96,17 +96,10 @@
         <section class="gallery">
             <div class="wrapper">
                 <ul>
-                    <li>
-                        <img src="assets/gallery1.jpg" alt="">
-                    </li>
-                    <li>
-                        <img src="assets/gallery2.jpg" alt="">
-                    </li>
-                    <li>
-                        <img src="assets/gallery3.jpg" alt="">
-                    </li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
                 </ul>
-
             </div>
         </section>
 
@@ -125,7 +118,6 @@
                         <label class="sr-only" for="email">Email</label>
                         <input type="email" for="email" placeholder="Enter your email">
                         <button  type="submit">Submit</button>
-
                     </form>
                 </div>
             </div>

@@ -21,12 +21,7 @@ header .wrapper {
     height: 90vh;
     padding:30px;
     border-radius: 50px;
-    box-shadow: 4px 4px 10px white;
-}
-
-h1,
-header p {
-    color: #000;
+    box-shadow: 4px 4px 10px #fff;
 }
 
 h1 {
@@ -48,7 +43,6 @@ header p {
     border-radius: 10px;
     box-shadow: 3px 3px 10px white;
     color: #f5f5dc;
-
 }
 .headerButton:hover,
 .headerButton:focus {
@@ -61,27 +55,24 @@ header p {
 
 // Selection form
 .formSection {
-    padding: 100px 0;
+    padding: 90px 0;
     background-color: #F0DFBB;
     text-align: center;
 }
 h2 {
     font-size: 4rem;
     text-transform: capitalize;
-    margin:40px 0;
-
+    margin-bottom: 40px;
 }
 .formSection form {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    // margin: 80px 0;
 }
-fieldset {
+.fieldsetWrapper {
     width: 75%;
     background-color: #DBB36C;
-    color: #000;
     font-size: 2rem;
     border-radius: 15px;
     margin-bottom: 20px;
@@ -90,16 +81,13 @@ fieldset {
     justify-content: space-between;
     text-align:left;
 }
-fieldset div {
+fieldset {
     width: calc(50% - 20px);
     border: 5px dotted #a25811;
     border-radius: 5px;
     padding: 20px 25px;
+}
 
-}
-fieldset div:nth-child(2) {
-    margin-left:40px;
-}
 h3 {
     font-size: 3rem;
     margin-bottom:20px;
@@ -119,11 +107,20 @@ main button {
     border:none;
     box-shadow: 3px 3px 5px black;
 }
-.findCatButton {
+.findCatButton,
+.adoptCatButton,
+.adoptFormSection button,
+.contact button {
     background: #CC874F;
 }
 .findCatButton:hover,
-.findCatButton:focus {
+.findCatButton:focus,
+.adoptCatButton:hover,
+.adoptCatButton:focus,
+.adoptFormSection button:hover,
+.adoptFormSection button:focus,
+.contact button:hover,
+.contact button:focus {
     background: #60383B;
     color: #f5f5dc;
 }
@@ -134,16 +131,15 @@ main button {
 }
 .results {
     display: flex;
-    // flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 .chosenCatImg {
     width: 40%;
-    margin: 50px;
-    border: 3px solid beige;
+    margin: 90px 50px;
+    border: 3px solid #f5f5dc;
     border-radius:5px;
-    box-shadow: 3px 3px 10px black;
+    box-shadow: 3px 3px 10px #000;
     }
 
 // .results img {
@@ -151,10 +147,8 @@ main button {
     width: 50%;
     margin-left:30px;
 }
-
 .results p {
     font-size: 3rem;
-    // font-weight: 600;
     line-height: 40px;
     margin:5px;
 }
@@ -162,13 +156,7 @@ main button {
     font-weight: 600;
 }
 .adoptCatButton {
-    background:#CC874F;
-    margin-bottom:30px;
-}
-.adoptCatButton:hover,
-.adoptCatButton:focus {
-    background: #60383B;
-    color: #f5f5dc;
+    margin-bottom: 90px;
 }
 
 // Adopt Form Section
@@ -195,12 +183,18 @@ main button {
     padding: 40px;
     font-size: 20px;
 }
+.adoptFormSection h2 {
+    margin: 0;
+}
 .inputWrapper {
     width: 100%;
     text-align: left;
     margin: 5px 0;
     display: flex;
     justify-content: space-around;
+}
+.adoptFormSection p {
+    margin: 20px;
 }
 .inputWrapper label {
     width: 20%;
@@ -211,18 +205,15 @@ main button {
     height: 30px;
     border: none;
 }
+.adoptFormSection {
+    padding: 90px 0;
+}
 .adoptFormSection button {
     width: 35%;
-    background: #CC874F;
 }
-.adoptFormSection button:hover,
-.adoptFormSection button:focus {
-    background: #60383B;
-    color: #f5f5dc;
-}
-
 
 // Gallery Section
+// Gallery
 .gallery {
     background:#000;
     height: 50%;
@@ -234,12 +225,19 @@ main button {
 }
 .gallery li {
     width: calc(100%/3 - 13px);
+    height: 50vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.gallery li:first-child {
+    background-image: url(../assets/gallery1.jpg);
 }
 .gallery li:nth-child(2) {
-    margin:0 20px;
+    margin: 0 20px;
+    background-image: url(../assets/gallery2.jpg);
 }
-.gallery img {
-    height: 100%;
+.gallery li:last-child {
+    background-image: url(../assets/gallery3.jpg);
 }
 
 // Contact section
@@ -267,33 +265,23 @@ main button {
 }
 .contact ul {
     display: flex;
-    
 }
 .contact a {
-    padding:0 10px;
+    padding: 0 10px;
     color:#000;
 }
-.contact button {
+.contact button,
+.contact input[type="email"] {
     font-size: 18px;
-    background-color: #CC874F;
-    padding:7px 20px;
+    padding: 7px 20px;
     border-radius: 2px;
-    border:none;
-    margin-top: 35px;
+    border: none;
 }
-.contact button:hover,
-.contact button:focus {
-    background-color: #60383B;
-    color: #f5f5dc;
+.contact button {
+    margin-top: 35px;
 }
 .contact p {
     line-height: 30px;
-}
-
-input[type="email"] {
-    font-size:18px;
-    padding: 5px 15px;
-    
 }
 
 // Footer
@@ -305,6 +293,7 @@ footer {
     padding: 2px;
 }
 
+
 // --------MEDIA QUERIES---------
 @media (max-width: 900px) {
     header .wrapper {
@@ -313,11 +302,23 @@ footer {
     h1 {
         font-size: 9rem;
     }
-    fieldset {
+    .fieldsetWrapper {
         width: 100%;
     }
     .headerButton {
         margin-top: 30px;
+    }
+    .adoptFormSection form {
+        width: 90%;
+    }
+    .gallery li:last-child {
+        display: none;
+    }
+    .gallery li:nth-child(2) {
+        margin: 0 0 0 20px;
+    }
+    .gallery li {
+        width: calc(100%/2 - 10px);
     }
 }
 
@@ -328,20 +329,20 @@ footer {
     header p {
         margin: 25px 0;
     }
-    fieldset {
+    .fieldsetWrapper {
         flex-direction: column;
         padding: 25px;
     }
-    fieldset div {
+    fieldset {
         width: 100%;
         flex-direction: column;
         text-align: center;
     }
-    fieldset div:nth-child(2) {
-        margin-left: 0;
+    .fieldsetWrapper fieldset:last-child {
         margin-top: 30px;
     }
-    fieldset div ul {
+    
+    fieldset ul {
         text-align:left;
         width: 70%;
         margin: 0 auto;
@@ -359,14 +360,18 @@ footer {
     .results p {
         text-align: left;
     }
-    .gallery li:last-child {
-        display: none;
+    .adoptFormSection form {
+        width: 100%;
+        padding: 20px;
+    }
+    .adoptFormSection button {
+        width: 47%;
     }
     .gallery li:nth-child(2) {
-        margin: 0 0 0 20px;
+        display: none;
     }
     .gallery li {
-        width: calc(100%/2 - 10px);
+        width: 100%;
     }
     .contact .wrapper {
         flex-direction: column;
@@ -387,7 +392,7 @@ footer {
     .headerButton {
         font-size: 2.5rem;
     }
-    fieldset div ul {
+    fieldset ul {
         width: 100%;
     }
     .chosenCatImg {
