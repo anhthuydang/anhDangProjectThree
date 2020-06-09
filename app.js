@@ -61,6 +61,10 @@ const adoptionApp = {};
         // Get values selected by user and assign them to variables
         const userBreed = $('input[name="breed"]:checked').val();
         const userColor = $('input[name="color"]:checked').val();
+        // Error handled when user does not select options
+        if (userBreed === undefined || userColor === undefined) {
+            alert("Please make selection in order to proceed!")
+        }
         // Filter through array to find matched cat(s)
         const chosenCats = adoptionApp.cats.filter(function(catObject) {
             return catObject.breed === userBreed && catObject.color === userColor;
